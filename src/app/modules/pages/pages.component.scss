@@ -1,0 +1,16 @@
+.pageCompo {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pageCompoImage {
+    width: 500px;
+}
+@media (max-width: 500px) {
+    .pageCompoImage {
+        max-width: 300px;
+    }
+}
