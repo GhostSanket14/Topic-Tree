@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
@@ -15,9 +16,11 @@ export class PagesComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.data.subscribe((data: any) => {
-      if(data.errorType === '404'){
-        this.imageSource = 'assets/images/404 not found.jpg';
-        this.imageAlternate = '404 Page not found (Image)'
+      switch (data.errorType){
+        case '404':
+          this.imageSource = 'assets/images/404 not found.jpg';
+          this.imageAlternate = '404 Page not found (Image)'
+        break;
       }
     });
   }
