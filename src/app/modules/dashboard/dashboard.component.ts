@@ -12,4 +12,12 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  highlightCard(cardType : string): void {
+    switch (cardType){
+      case 'military':
+        
+      break;
+    }
+  }
+
 }

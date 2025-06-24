@@ -9,9 +9,23 @@
 .pageCompoImage {
     width: 500px;
 }
+
 @media (max-width: 500px) {
     .pageCompoImage {
         max-width: 300px;
     }
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+@media (min-width: 500px) {
+    .box {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
