@@ -1,8 +1,12 @@
+:root{
+    --main-bgcolor : #ffffff;
+}
 .dashboardHolder {
     min-height: 100vh;
     padding: 16px;
     background-size: 400% 400%;
     box-sizing: border-box;
+    background-color: var(--main-bgcolor);
 }
 
 .topicCards {
@@ -33,6 +37,10 @@
 .cards h1 {
     margin: 0;
     font-size: 1.2rem;
+}
+
+.cards span{
+    color: rgb(17, 17, 17);
 }
 
 

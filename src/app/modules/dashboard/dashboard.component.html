@@ -1,27 +1,14 @@
 <div class="dashboardHolder">
     <div id="billboard">
-
-        <!-- Make this dymanic too. -->
-         <!-- When i hover over 1 card. others should go blur and animation should play in background of dashboard -->
-
     </div>
     <div class="topicCards">
-        <div class="cards">
-            <div id="military" (mouseenter)="highlightCard('military')">
-                <h1>Heading here</h1>
+        <div class="cards" *ngFor="let cdata of cardsData; index as i">
+            <div [id]="[cdata.cardStyle]" (mouseover)="configurationSetting(cdata.cardTitle)"
+                                            (mouseleave)="configurationSetting('default')">
+                <h1>{{cdata.cardTitle}} <i [class]="cdata.cardIcon"></i></h1>
                 <div>
                     <span>
-                        Brief Description will be put here to give simple zist of content.
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="cards">
-            <div id="history">
-                <h1>Heading here</h1>
-                <div>
-                    <span>
-                        Brief Description will be put here to give simple zist of content.
+                        {{cdata.cardDesc}}
                     </span>
                 </div>
             </div>
