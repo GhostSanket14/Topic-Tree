@@ -1,18 +1,26 @@
 <div class="dashboardHolder">
-    <div id="billboard">
-    </div>
+    <!-- Background Image -->
+    <img [src]="this.bgImage" class="bgImage" [class.fade-in]="bgImage"/>
+    <div class="bgOverlay"></div>
+
+    <div id="billboard"></div>
+
     <div class="topicCards">
+
         <div class="cards" *ngFor="let cdata of cardsData; index as i">
-            <div [id]="[cdata.cardStyle]" (mouseover)="configurationSetting(cdata.cardTitle)"
-                                            (mouseleave)="configurationSetting('default')">
-                <h1>{{cdata.cardTitle}} <i [class]="cdata.cardIcon"></i></h1>
+            <div [id]="cdata.cardStyle" (mouseover)="configurationSetting(cdata.cardTitle)"
+                (mouseleave)="configurationSetting('default')" (mousedown)="configurationSetting(cdata.cardTitle,true)">
+                <h1>
+                    {{ cdata.cardTitle }} <i [class]="cdata.cardIcon"></i>
+                </h1>
                 <div>
                     <span>
-                        {{cdata.cardDesc}}
+                        {{ cdata.cardDesc }}
                     </span>
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
+  

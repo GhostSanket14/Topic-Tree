@@ -6,6 +6,7 @@ import { PagesComponent } from './pages/pages.component';
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'categories', loadChildren: () => import('./categories/categories.module').then(m=>m.CategoriesModule)},
   { path: '**', component: PagesComponent,data:{ foundIn : 'modules', errorType : '404' } }
 ];
 

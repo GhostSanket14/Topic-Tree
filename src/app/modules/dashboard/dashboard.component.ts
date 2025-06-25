@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
 
   masterData: any;
   cardsData : any[] = [];
+  bgImage: string = "";
 
 
   constructor(private http: HttpClient) { }
@@ -22,11 +23,25 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  configurationSetting(cardTitle : String): void {
+
+
+  configurationSetting(cardTitle : String, openCard : boolean = false): void {
     switch (cardTitle){
       case "Forts":
-        document.documentElement.style.setProperty('--main-bgcolor', '#116530');
+        for(const card of this.cardsData){
+          if (card.cardTitle === "Forts"){
+            this.bgImage = card.bgImage;
+          }
+        }
       break;
+      case 'Forests':
+        for (const card of this.cardsData) {
+          if (card.cardTitle === "Forests") {
+            this.bgImage = card.bgImage;
+          }
+        }
+      break;
+
       case 'default':
         document.documentElement.style.setProperty('--main-bgcolor', '#ffffff');
         break;

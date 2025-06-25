@@ -6,13 +6,16 @@
                     "cardTitle" : "Forts",
                     "cardDesc": "Indian forts are majestic symbols of the country's rich architectural and military heritage, built by various dynasties across centuries. These structures reflect strategic brilliance and cultural grandeur, often perched on hills or surrounded by vast landscapes.",
                     "cardStyle" : "#{background-color: #116530;}",
-                    "cardIcon":"fa-brands fa-fort-awesome"
+                    "cardIcon":"fa-brands fa-fort-awesome",
+                    "bgImage": "/assets/images/redfort.png"
             },
             {
                     "cardTitle": "Forests",
                     "cardDesc": "Indian forests are diverse ecosystems ranging from dense tropical rainforests to dry deciduous woodlands, home to rich biodiversity. They play a vital role in supporting wildlife, preserving climate balance, and sustaining millions of livelihoods.",
                     "cardStyle": "#{background-color: #116530;}",
-                    "cardIcon":"fa-solid fa-tree"
+                    "cardIcon":"fa-solid fa-tree",
+                    "bgImage": "/assets/images/forest.jpg"
+                    
             }
         ]
     }
