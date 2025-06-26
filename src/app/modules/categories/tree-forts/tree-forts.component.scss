@@ -1,0 +1,9 @@
+.Root {
+    position: relative;
+    min-height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 0;
+    /* base layer */
+    overflow: hidden;
+}

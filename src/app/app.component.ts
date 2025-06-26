@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'topic-tree';
+  AboutPopup: boolean = false;
+
+  toggleAbout(){
+    this.AboutPopup = !this.AboutPopup;
+  }
+
 }
+

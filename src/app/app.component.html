@@ -3,13 +3,28 @@
         <div class="logo">Topic Tree</div>
         <nav class="navLinks">
             <a href="#">Home</a>
-            <a>About</a>
+            <a (mouseover)="toggleAbout()">About</a>
         </nav>
     </div>
 </header>  
-<router-outlet></router-outlet>
+<div>
+    <router-outlet></router-outlet>
+</div>
 <footer>
     <div class="footerGlobal">
         
     </div>
 </footer>
+
+<div id="AboutPopup" *ngIf="AboutPopup" class="aboutPopupOverlay">
+    <div class="aboutPopupContent">
+        <button class="closeBtn" (click)="toggleAbout()">×</button>
+        <div class="aboutLogo">Topic Tree</div>
+        <div class="aboutInfo">
+            <h3>1</h3>
+            <h3>2</h3>
+            <h3>3</h3>
+            <h3>4</h3>
+        </div>
+    </div>
+</div>

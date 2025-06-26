@@ -1,4 +1,64 @@
-*{
+* {
     padding: 0;
     margin: 0;
+}
+
+.Root {
+    position: relative;
+    min-height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 0;
+    /* base layer */
+    overflow: hidden;
+}
+
+// POPUP
+.aboutPopupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.aboutPopupContent {
+    background-color: #ffffff;
+    color: #116530;
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: popupFadeIn 0.3s ease;
+}
+
+.aboutLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.aboutInfo {
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+@keyframes popupFadeIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
