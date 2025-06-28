@@ -8,7 +8,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DashboardComponent implements OnInit {
 
-  masterData: any;
   cardsData : any[] = [];
   bgImage: string = "";
 
@@ -16,7 +15,7 @@ export class DashboardComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('assets/global/dashboardMaster.json').subscribe(data => {
+    this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
       const dbCardsObj = data.find(item => item.id === 'DbCards');
       this.cardsData = dbCardsObj.value;
       console.log(this.cardsData);

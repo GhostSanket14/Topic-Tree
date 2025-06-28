@@ -1,9 +1,13 @@
-.Root {
-    position: relative;
-    min-height: 100vh;
-    padding: 16px;
-    box-sizing: border-box;
-    z-index: 0;
-    /* base layer */
-    overflow: hidden;
+.projectIcon {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Hover effect - adds visual interaction */
+.projectIcon:hover {
+    color: #34495e;
+    transform: scale(1.2);
 }

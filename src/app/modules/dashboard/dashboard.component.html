@@ -7,7 +7,7 @@
 
     <div class="topicCards">
 
-        <div class="cards" *ngFor="let cdata of cardsData; index as i">
+        <div class="cards richTextBlock" *ngFor="let cdata of cardsData; index as i">
             <div [id]="cdata.cardStyle" (mouseover)="configurationSetting(cdata.cardTitle)"
                 (mouseleave)="configurationSetting('default')" (mousedown)="configurationSetting(cdata.cardTitle,true)">
                 <h1>

@@ -2,18 +2,52 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    --btn-color: #18A558;
+}
 
+// Tag width formatting
+.col1 {
+    padding: 1px;
+    margin: 1px;
+    width: 95vw;
+}
+
+.col2 {
+    padding: 1px;
+    margin: 1px;
+    width: 75vw;
+}
+
+.col3 {
+    padding: 1px;
+    margin: 1px;
+    width: 50vw;
+}
+
+.col4 {
+    padding: 1px;
+    margin: 1px;
+    width: 25vw;
+}
+
+.col5 {
+    padding: 1px;
+    margin: 1px;
+    width: 10vw;
+}
+
+// Component Root size & formatting
 .Root {
     position: relative;
     min-height: 100vh;
-    padding: 16px;
+    padding: 15px;
     box-sizing: border-box;
     z-index: 0;
-    /* base layer */
     overflow: hidden;
 }
 
-// POPUP
+// POPUP - Keep in mind to put below class inside aboutPopupOverlay as per need.
 .aboutPopupOverlay {
     position: fixed;
     top: 0;
@@ -39,7 +73,7 @@
 }
 
 .aboutLogo {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 12px;
@@ -47,7 +81,7 @@
 }
 
 .aboutInfo {
-    font-size: 0.95rem;
+    font-size: 0.95vw;
     text-align: center;
 }
 
@@ -61,4 +95,127 @@
         transform: scale(1);
         opacity: 1;
     }
+}
+
+// Banner & image
+.Banner {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid rgba(180, 180, 180, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 350px) {
+    .Banner {
+        max-width: 100%;
+    }
+}
+
+.Banner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+
+}
+
+fieldset {
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+fieldset legend {
+    font-weight: bold;
+    color: #535151;
+    padding: 0 8px;
+    font-size: 1rem;
+}
+
+// Text and format
+.richTextBlock {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #212121;
+    padding: 1rem;
+    text-align: justify;
+    max-width: 100%;
+    letter-spacing: 0.3px;
+}
+
+.richTextBlock h1,
+.richTextBlock h2,
+.richTextBlock h3 {
+    color: #116530;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+}
+
+.richTextBlock em {
+    font-style: italic;
+    color: #21b6a8;
+
+}
+
+.richTextBlock a {
+    color: #18a558;
+    text-decoration: underline dotted;
+}
+
+.richTextBlock strong {
+    color: #000;
+    font-weight: 600;
+}
+
+@media (max-width: 400px) {
+    .richTextBlock {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .richTextBlock h1,
+    .richTextBlock h2 {
+        font-size: 1.1rem;
+    }
+
+    .richTextBlock h3 {
+        font-size: 1rem;
+    }
+}
+
+// Global button CSS
+
+.altActionBtn {
+    background-color: var(--btn-color);
+    /* dark blue-gray */
+    color: #ffffff;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(44, 62, 80, 0.4);
+}
+
+.altActionBtn:hover {
+    background-color: var(--btn-color);
+    box-shadow: 0 6px 12px rgba(44, 62, 80, 0.3);
+}
+
+.altActionBtn:active {
+    transform: translateY(+2px);
+    box-shadow: 0 3px 6px rgba(44, 62, 80, 0.2);
 }
