@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 :root {
     --btn-color: #18A558;
 }
@@ -41,60 +42,10 @@
 .Root {
     position: relative;
     min-height: 100vh;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
     z-index: 0;
     overflow: hidden;
-}
-
-// POPUP - Keep in mind to put below class inside aboutPopupOverlay as per need.
-.aboutPopupOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-}
-
-.aboutPopupContent {
-    background-color: #ffffff;
-    color: #116530;
-    border-radius: 12px;
-    padding: 24px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    animation: popupFadeIn 0.3s ease;
-}
-
-.aboutLogo {
-    font-size: 1.5vw;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-.aboutInfo {
-    font-size: 0.95vw;
-    text-align: center;
-}
-
-@keyframes popupFadeIn {
-    from {
-        transform: scale(0.95);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 // Banner & image
@@ -116,6 +67,7 @@
     .Banner {
         max-width: 100%;
     }
+
 }
 
 .Banner img {
@@ -190,6 +142,10 @@ fieldset legend {
     .richTextBlock h3 {
         font-size: 1rem;
     }
+
+    .aboutLogo {
+        font-size: 4.5vw;
+    }
 }
 
 // Global button CSS
@@ -218,4 +174,31 @@ fieldset legend {
 .altActionBtn:active {
     transform: translateY(+2px);
     box-shadow: 0 3px 6px rgba(44, 62, 80, 0.2);
+}
+
+// Input field
+.customInput {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    color: #212121;
+    box-sizing: border-box;
+}
+
+.customInput:focus {
+    border-color: #21b6a8;
+    /* your blue-green */
+    box-shadow: 0 0 4px rgba(33, 182, 168, 0.4);
+    /* subtle glow */
+}
+
+#_icons {
+    font-size: 2rem;
+    color: #333;
 }

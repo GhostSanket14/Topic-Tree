@@ -5,6 +5,7 @@ import { ModulesRoutingModule } from './modules-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages/pages.component';
 import { MaterialsModule } from '../shared/materials/materials.module';
+import { SharedComponentModule } from '../shared/shared-component/shared-component.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MaterialsModule } from '../shared/materials/materials.module';
   imports: [
     CommonModule,
     ModulesRoutingModule,
-    MaterialsModule
+    MaterialsModule,
+    SharedComponentModule
   ]
 })
 export class ModulesModule { }

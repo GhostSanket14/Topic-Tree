@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
 
   cardsData : any[] = [];
   bgImage: string = "";
+  loading : boolean = false;
 
 
   constructor(private http: HttpClient) { }
@@ -25,6 +26,7 @@ export class DashboardComponent implements OnInit {
 
 
   configurationSetting(cardTitle : String, openCard : boolean = false): void {
+    this.loading = true;
     switch (cardTitle){
       case "Forts":
         for(const card of this.cardsData){
@@ -44,6 +46,8 @@ export class DashboardComponent implements OnInit {
       case 'default':
         document.documentElement.style.setProperty('--main-bgcolor', '#ffffff');
         break;
+
     }
+    this.loading = false;
   }
 }

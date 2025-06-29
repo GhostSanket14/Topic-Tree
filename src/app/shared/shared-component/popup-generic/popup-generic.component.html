@@ -1,0 +1,10 @@
+<div id="AboutPopup" *ngIf="PopupFlag" class="aboutPopupOverlay">
+    <div class="aboutPopupContent">
+        <button class="closeBtn" (click)="toggleAbout()">×</button>
+        <div class="aboutLogo">{{popup}}</div>
+        <div class="aboutInfo">
+            <!-- This will render the DIV / templete passed by the parent -->
+            <ng-container *ngTemplateOutlet="templete"></ng-container>                        
+        </div>
+    </div>
+</div>

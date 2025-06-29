@@ -1,0 +1,16 @@
+<div class="loading-screen">
+    <!-- loading -->
+    <ng-container *ngIf="loader==='load'">
+        <i class="fa-solid fa-spinner fa-spin" id="_icons"></i>
+    </ng-container>
+
+    <!-- Searching -->
+    <ng-container *ngIf="loader==='search'">
+        <i class="fa-solid fa-magnifying-glass fa-beat-fade" id="_icons"></i>
+    </ng-container>
+
+    <!-- Updating / Endting -->
+    <ng-container *ngIf="loader==='edit'">
+        <i class="fa-solid fa-marker fa-bounce" id="_icons"></i>
+    </ng-container>
+</div>

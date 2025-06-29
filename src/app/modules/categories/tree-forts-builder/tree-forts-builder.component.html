@@ -1,0 +1,30 @@
+<div class="Root richTextBlock">
+    <ng-container>
+
+        <mat-drawer-container class="drawer-container">
+            <mat-drawer #drawer mode="over" position="start" class="drawer">
+                <div>
+                    <h3 onmousedown="">Forts     <i class="fa-solid fa-filter " id="#_icons"></i></h3>
+                    <ng-container>
+                        <input matInput placeholder="Search" required class="customInput" (input)="searchList($event)">
+                    </ng-container>
+                </div>
+                <mat-divider></mat-divider>
+                <div>
+                    <!-- Render logic here. -->
+
+                </div>
+            </mat-drawer>
+
+            <div class="main-content">
+                <button type="button" mat-raised-button (click)="drawer.toggle()"
+                    class="col5 altActionBtn">List</button>
+                <div class="col1">
+                    <!-- Build the render logic here -->
+                </div>
+            </div>
+        </mat-drawer-container>
+    </ng-container>
+</div>
+
+<app-loading-effect [loaderType]="'load'" *ngIf="loading"></app-loading-effect>
