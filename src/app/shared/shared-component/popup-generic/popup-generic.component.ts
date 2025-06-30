@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, TemplateRef } from '@angular/core';
+import { Component, Input, OnInit, Output, TemplateRef, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-popup-generic',
@@ -7,16 +7,21 @@ import { Component, Input, OnInit, TemplateRef } from '@angular/core';
 })
 export class PopupGenericComponent implements OnInit {
 
+  @Input('popupTitle') popup: string = 'Topic Tree';
+  @Input('templete') templete!: TemplateRef<any>;
+  @Input('popupToggle') popupToggle!: boolean;
+  @Output() ChildCd = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  @Input('popupTitle') popup: string = 'Topic Tree';
-  @Input('templete') templete!: TemplateRef<any>;
-  PopupFlag: boolean = false;
 
-  toggleAbout() {
-    this.PopupFlag = !this.PopupFlag;
+  ChildChanged(field: string, event: Event,emitFlag: boolean, dataDump: any = ''){
+    if (emitFlag){
+      this.ChildCd.emit({ field, event, dataDump });
+    }else{
+      // Run child code.     
+    }
   }
-
 }

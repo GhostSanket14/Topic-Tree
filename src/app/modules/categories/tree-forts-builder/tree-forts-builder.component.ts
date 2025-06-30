@@ -10,19 +10,32 @@ import { MatDrawer } from '@angular/material/sidenav';
 export class TreeFortsBuilderComponent implements OnInit {
 
   @ViewChild(MatDrawer) drawer!: MatDrawer;
-  loading : boolean = false;
+  loading: boolean = false;
+  popupFlag: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
+  doChanges(payload: { field: string, event: Event, dataDump: any }) {
+    switch (payload.field) {
+      case 'popupGeneric':
+        this.togglePopup();
+        break;
+    }
+  }
+  searchList(event: Event) {
+    const val = (event.target as HTMLInputElement).value;
+  }
+
+
 
   closeDrawer() {
     this.drawer.close();
   }
-  searchList(event : Event){
-    const val = (event.target as HTMLInputElement).value;
-    
+  togglePopup() {
+    this.popupFlag = !this.popupFlag;
   }
+
 }

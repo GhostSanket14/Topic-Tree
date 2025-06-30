@@ -142,10 +142,6 @@ fieldset legend {
     .richTextBlock h3 {
         font-size: 1rem;
     }
-
-    .aboutLogo {
-        font-size: 4.5vw;
-    }
 }
 
 // Global button CSS
@@ -199,6 +195,27 @@ fieldset legend {
 }
 
 #_icons {
-    font-size: 2rem;
-    color: #333;
+
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+#_icons:hover {
+    transform: scale(1.15);
+    color: #2c3e50;
+}
+
+
+// Checkbox
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #0f6c39 !important;
+}
+
+.mat-checkbox-frame {
+    border-color: #0C522C !important;
+}
+
+.mat-checkbox.mat-accent .mat-ripple-element {
+    background: rgba(33, 150, 243, 0.2);
 }

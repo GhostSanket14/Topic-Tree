@@ -1,6 +1,6 @@
-<div id="AboutPopup" *ngIf="PopupFlag" class="aboutPopupOverlay">
+<div id="AboutPopup" *ngIf="popupToggle" class="aboutPopupOverlay">
     <div class="aboutPopupContent">
-        <button class="closeBtn" (click)="toggleAbout()">×</button>
+        <button class="closeBtn" (click)="ChildChanged('popupGeneric',$event,true)">×</button>
         <div class="aboutLogo">{{popup}}</div>
         <div class="aboutInfo">
             <!-- This will render the DIV / templete passed by the parent -->

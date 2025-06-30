@@ -11,7 +11,7 @@
             <div [id]="cdata.cardStyle" (mouseover)="configurationSetting(cdata.cardTitle)"
                 (mouseleave)="configurationSetting('default')" (mousedown)="configurationSetting(cdata.cardTitle,true)">
                 <h1>
-                    {{ cdata.cardTitle }} <i [class]="cdata.cardIcon"></i>
+                    {{ cdata.cardTitle }} <i [class]="cdata.cardIcon" id="_icons"></i>
                 </h1>
                 <div>
                     <span>

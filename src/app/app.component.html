@@ -15,12 +15,13 @@
         
     </div>
 </footer>
-
 <!-- Passing div to child -->
 <ng-template #customDiv>
     <div style="padding: 10px; background-color: lightgreen;">
-        I am a div passed from parent!
+        <h2>1</h2>
+        <h2>2</h2>
+        <h2>3</h2>
     </div>
 </ng-template>
 
-<app-popup-generic [popupTitle]="'TopicTree'" [templete]="customDiv"></app-popup-generic>
+<app-popup-generic [popupTitle]="'TopicTree'" [templete]="customDiv" [popupToggle]="popupFlag" (ChildCd)="doChanges($event)"></app-popup-generic>

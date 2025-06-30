@@ -4,7 +4,8 @@
         <mat-drawer-container class="drawer-container">
             <mat-drawer #drawer mode="over" position="start" class="drawer">
                 <div>
-                    <h3 onmousedown="">Forts     <i class="fa-solid fa-filter " id="#_icons"></i></h3>
+                    <h3 onmousedown="">Forts <i class="fa-solid fa-filter " id="_icons" (mousedown)="togglePopup()"></i>
+                    </h3>
                     <ng-container>
                         <input matInput placeholder="Search" required class="customInput" (input)="searchList($event)">
                     </ng-container>
@@ -27,4 +28,17 @@
     </ng-container>
 </div>
 
+<!-- Loading effect popup -->
 <app-loading-effect [loaderType]="'load'" *ngIf="loading"></app-loading-effect>
+
+<ng-template #customDiv>
+    <div style="padding: 5px; background-color: lightgreen;">
+        <div>
+            <mat-checkbox class="richTextBlock">Easy Treak</mat-checkbox>
+        </div>
+    </div>
+</ng-template>
+
+<!-- POP for Filter -->
+<app-popup-generic [popupTitle]="'Filter'" [templete]="customDiv" [popupToggle]="popupFlag"
+    (ChildCd)="doChanges($event)"></app-popup-generic>
