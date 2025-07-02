@@ -9,6 +9,7 @@ import { MatDrawer } from '@angular/material/sidenav';
   styleUrls: ['./tree-forts-builder.component.scss']
 })
 export class TreeFortsBuilderComponent implements OnInit {
+[x: string]: any;
 
   @ViewChild(MatDrawer) drawer!: MatDrawer;
   loading: boolean = false;
@@ -36,13 +37,16 @@ export class TreeFortsBuilderComponent implements OnInit {
     const val = (event.target as HTMLInputElement).value;
   }
 
+  LoadContentInfo(numVal : number){
+    console.log(numVal);
+  }
 
 
+  // Small utility
   closeDrawer() {
     this.drawer.close();
   }
   togglePopup() {
     this.popupFlag = !this.popupFlag;
   }
-
 }

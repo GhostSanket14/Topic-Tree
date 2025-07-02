@@ -1,31 +1,37 @@
 <div class="Root richTextBlock">
     <ng-container>
 
-        <mat-drawer-container class="drawer-container">
+        <mat-drawer-container class="drawer-container" [hasBackdrop]="false">
             <mat-drawer #drawer mode="over" position="start" class="drawer">
                 <div>
-                    <h3 onmousedown="">Forts <i class="fa-solid fa-filter " id="_icons" (mousedown)="togglePopup()"></i>
-                    </h3>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 onmousedown="">Forts <i class="fa-solid fa-filter " id="_icons"
+                                (mousedown)="togglePopup()"></i>
+                        </h3>
+                        <i class="fa-regular fa-circle-xmark" id="_icons" (click)="drawer.toggle()" style="color: rgb(191, 57, 57);"></i>
+                    </div>
                     <ng-container>
                         <input matInput placeholder="Search" required class="customInput" (input)="searchList($event)">
                     </ng-container>
+
                 </div>
                 <br>
                 <mat-divider></mat-divider>
                 <div>
                     <div>
-                        <div class="contentPresent" *ngFor="let item of fortList">
-                            <h3>{{item.name}}</h3>
+                        <div class="contentPresent" *ngFor="let item of fortList;let i = index">
+                            <h3 (click)="LoadContentInfo(i)">{{item.name}}</h3>
                         </div>
                     </div>
                 </div>
             </mat-drawer>
 
-            <div class="main-content">
+            <div class="main-content" style="background-color: antiquewhite;">
                 <button type="button" mat-raised-button (click)="drawer.toggle()"
                     class="col5 altActionBtn">List</button>
                 <div class="col1">
-                    <div style="background-color: antiquewhite;">
+                    <!-- Put content render logic here -->
+                    <div>
                         <h1>H1</h1>
                     </div>
                 </div>
