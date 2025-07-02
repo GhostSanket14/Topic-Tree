@@ -2,7 +2,14 @@
     {
         "id":"FortList",
         "value":[
-            
+            {
+                "id":"RaFo01",
+                "name": "Rajgad Fort"
+            },
+            {
+                "id": "RaFo02",
+                "name": "Raigad Fort"
+            }
         ]
     }
 ]

@@ -10,10 +10,14 @@
                         <input matInput placeholder="Search" required class="customInput" (input)="searchList($event)">
                     </ng-container>
                 </div>
+                <br>
                 <mat-divider></mat-divider>
                 <div>
-                    <!-- Render logic here. -->
-
+                    <div>
+                        <div class="contentPresent" *ngFor="let item of fortList">
+                            <h3>{{item.name}}</h3>
+                        </div>
+                    </div>
                 </div>
             </mat-drawer>
 
@@ -21,7 +25,9 @@
                 <button type="button" mat-raised-button (click)="drawer.toggle()"
                     class="col5 altActionBtn">List</button>
                 <div class="col1">
-                    <!-- Build the render logic here -->
+                    <div style="background-color: antiquewhite;">
+                        <h1>H1</h1>
+                    </div>
                 </div>
             </div>
         </mat-drawer-container>

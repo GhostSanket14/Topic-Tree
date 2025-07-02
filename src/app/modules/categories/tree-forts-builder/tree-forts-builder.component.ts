@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDrawer } from '@angular/material/sidenav';
@@ -12,10 +13,16 @@ export class TreeFortsBuilderComponent implements OnInit {
   @ViewChild(MatDrawer) drawer!: MatDrawer;
   loading: boolean = false;
   popupFlag: boolean = false;
+  fortList : any = [];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+
+    this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data=>{
+      const fortListObj = data.find((item: { id: string; }) => item.id === 'FortList');
+      this.fortList = fortListObj.value;
+    });
 
   }
   doChanges(payload: { field: string, event: Event, dataDump: any }) {
