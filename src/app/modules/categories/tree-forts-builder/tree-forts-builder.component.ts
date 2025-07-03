@@ -16,6 +16,8 @@ export class TreeFortsBuilderComponent implements OnInit {
   popupFlag: boolean = false;
   fortList : any = [];
 
+  Test = "asdasd<strong>aa</strong>ssf0";
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {

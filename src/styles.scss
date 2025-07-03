@@ -195,7 +195,6 @@ fieldset legend {
 }
 
 #_icons {
-
     font-size: 1.3rem;
     color: #2c3e50;
 }
@@ -224,11 +223,10 @@ fieldset legend {
 .contentPresent {
     display: flex;
     flex-direction: column;
-    padding: 0.2rem;
 }
 
 .contentPresent>* {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     padding: 0.6rem 0.5rem;
     border-radius: 6px;
     font-size: 1rem;
@@ -236,11 +234,11 @@ fieldset legend {
     color: #2c3e50;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
     text-align: left;
 }
 
 .contentPresent>*:hover {
-    background-color: #e0e0e0;
-    transform: translateX(4px);
+    background-color: #f2f2f2;
+    transform: translateX(3px);
 }

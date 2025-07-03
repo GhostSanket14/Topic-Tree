@@ -2,12 +2,16 @@
     height: 100vh;
     display: flex;
 }
+
 .drawer {
     width: 250px;
     background-color: #a3ebb1;
     padding: 1rem;
 }
+
 .main-content {
     flex: 1;
-    padding: 1rem;
+    // padding: 1rem;
 }
+
+// CONTENT display
