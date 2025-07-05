@@ -8,17 +8,17 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TreeFortsComponent implements OnInit {
 
-  RequestCategory = "Forts"; // hard coded for now. Later will be decided based on 
-  categoryData : any = [];
+  RequestCategory: string = "Forts"; // hard coded for now. Later will be decided based on what we click on Dashboard
+  categoryData: any = [];
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data=>{
+    this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
       const categoryMaster = data.find(item => item.id === 'DbCategories');
-      this.categoryData = (categoryMaster.value).find((item: { caterogyTitle: any; }) => item.caterogyTitle === '');
+      this.categoryData = (categoryMaster.value).find((item: { caterogyTitle: any; }) => item.caterogyTitle === this.RequestCategory);
     });
-    document.documentElement.style.setProperty('--btn-color','#34495e');
+    document.documentElement.style.setProperty('--btn-color', '#34495e');
   }
 
 

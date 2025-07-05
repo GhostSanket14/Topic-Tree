@@ -1,10 +1,10 @@
 <div class="Root">
     <div class="Banner">
-        <img src="assets/images/fortBanner2.jpg" alt="">
+        <img [src]="categoryData.categoryImageUrl" alt="">
     </div>
     <br>
     <div class="Banner">
-        <h1 [innerHTML]="categoryData.caterogyTitle"></h1>
+        <h1><strong>{{categoryData.caterogyTitle}}</strong></h1>
         <mat-divider></mat-divider>
         <div class="richTextBlock">
             <span>
