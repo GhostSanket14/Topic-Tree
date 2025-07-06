@@ -14,9 +14,10 @@ export class TreeFortsBuilderComponent implements OnInit {
   @ViewChild(MatDrawer) drawer!: MatDrawer;
   loading: boolean = false;
   popupFlag: boolean = false;
-  fortList : any = [];
 
-  Test = "asdasd<strong>aa</strong>ssf0";
+  fortList : any = [];
+  fortData: any = [];
+  DisplayData: any;
 
   constructor(private http: HttpClient) { }
 
@@ -25,6 +26,13 @@ export class TreeFortsBuilderComponent implements OnInit {
     this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data=>{
       const fortListObj = data.find((item: { id: string; }) => item.id === 'FortList');
       this.fortList = fortListObj.value;
+    });
+
+    this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data => {
+      const fortListObj = data.find((item: { id: string; }) => item.id === 'FortData');
+      this.fortData = fortListObj.value;
+      // Loading 1 deafult fort
+      this.LoadContentInfo("RaFo01");
     });
 
   }
@@ -37,10 +45,13 @@ export class TreeFortsBuilderComponent implements OnInit {
   }
   searchList(event: Event) {
     const val = (event.target as HTMLInputElement).value;
+
   }
 
-  LoadContentInfo(numVal : number){
-    console.log(numVal);
+  LoadContentInfo(ItemId : string){
+    this.DisplayData  = this.fortData.find((Data: { id: string }) => 
+    { return Data.id === ItemId }
+  );
   }
 
 

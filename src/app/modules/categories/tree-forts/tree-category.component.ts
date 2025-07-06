@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-tree-forts',
-  templateUrl: './tree-forts.component.html',
-  styleUrls: ['./tree-forts.component.scss']
+  templateUrl: './tree-category.component.html',
+  styleUrls: ['./tree-category.component.scss']
 })
-export class TreeFortsComponent implements OnInit {
+export class TreeCategoryComponent implements OnInit {
 
   RequestCategory: string = "Forts"; // hard coded for now. Later will be decided based on what we click on Dashboard
   categoryData: any = [];

@@ -74,7 +74,7 @@
 
 
 /* 🖥️ Tablet and Desktop view */
-@media (min-width: 500px) {
+@media (min-width: 451px) {
     .topicCards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -82,7 +82,7 @@
     }
 
     .cards {
-        flex: 1 1 calc(48% - 8px);
+        flex: 1 1 calc(40% - 8px);
         max-width: calc(48% - 8px);
     }
 }
@@ -90,7 +90,7 @@
 /* 🖥️ Larger screens (4 cards per row) */
 @media (min-width: 1200px) {
     .cards {
-        flex: 1 1 calc(23% - 8px);
-        max-width: calc(23% - 8px);
+        flex: 1 1 calc(30% - 8px);
+        max-width: calc(30% - 8px);
     }
 }

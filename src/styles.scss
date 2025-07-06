@@ -152,7 +152,7 @@ fieldset legend {
     }
 
     .richTextBlock span {
-        padding: 10px;
+        padding: 6px;
     }
 }
 
@@ -189,7 +189,7 @@ fieldset legend {
     padding: 0.6rem 0.75rem;
     font-size: 1rem;
     font-family: 'Segoe UI', sans-serif;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.7);
     border-radius: 6px;
     outline: none;
     background-color: #fff;
@@ -200,9 +200,7 @@ fieldset legend {
 
 .customInput:focus {
     border-color: #21b6a8;
-    /* your blue-green */
     box-shadow: 0 0 4px rgba(33, 182, 168, 0.4);
-    /* subtle glow */
 }
 
 #_icons {
@@ -252,4 +250,33 @@ fieldset legend {
 .contentPresent>*:hover {
     background-color: #f2f2f2;
     transform: translateX(3px);
+}
+
+// To mention the image author
+
+.imageWithOverlay {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.imageWithOverlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+// To prevent overflow for pre tag use this
+.textBlock {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.infoPresent{
+    background-color: rgb(226, 226, 226);
+    padding: 6px;
+    border-radius: 7px;
 }

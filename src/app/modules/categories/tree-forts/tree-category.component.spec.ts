@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TreeFortsComponent } from './tree-forts.component';
+import { TreeCategoryComponent } from './tree-category.component';
 
-describe('TreeFortsComponent', () => {
-  let component: TreeFortsComponent;
-  let fixture: ComponentFixture<TreeFortsComponent>;
+describe('TreeCategoryComponent', () => {
+  let component: TreeCategoryComponent;
+  let fixture: ComponentFixture<TreeCategoryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TreeFortsComponent ]
+      declarations: [TreeCategoryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TreeFortsComponent);
+    fixture = TestBed.createComponent(TreeCategoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

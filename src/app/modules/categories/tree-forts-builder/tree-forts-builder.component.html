@@ -20,7 +20,7 @@
                 <div>
                     <div>
                         <div class="contentPresent" *ngFor="let item of fortList;let i = index">
-                            <h3 (click)="LoadContentInfo(i)">{{item.name}}</h3>
+                            <h3 (click)="LoadContentInfo(item.id)">{{item.name}}</h3>
                         </div>
                     </div>
                 </div>
@@ -31,36 +31,42 @@
                     class="col5 altActionBtn">List</button>
                 <div class="col1">
                     <!-- Content Render -->
-                    <div class="customLayout richTextBlock">
+                    <div class="richTextBlock">
                         <!-- 1 -->
-                        <h1 align="center">Heading</h1>
-
-                        <!-- 2 -->
-                        <div class="imgAndData">
-                            <div>
-                                <img src="assets/images/castle.jpg" alt="">
+                        <h1 align="center">{{DisplayData.name}}</h1>
+                        <div class="boxShadow">
+                            <!-- 2 -->
+                            <div class="imgAndData">
+                                <div>
+                                    <img [src]="DisplayData.imgUrl" [alt]="DisplayData.ImgAlt">
+                                    <small class="imageWithOverlay">Image By: {{DisplayData.imgAuthor}}</small>
+                                </div>
+                                <div class="infoPresent">
+                                    <h2></h2>
+                                    <pre [innerHTML]="DisplayData.Desc" class="textBlock"></pre>
+                                </div>
                             </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam molestiae
-                                    eveniet porro harum amet sapiente earum tenetur, omnis reiciendis culpa perspiciatis
-                                    magni perferendis rerum odit. Error pariatur molestias dignissimos!</p>
-                            </div>
-                        </div>
 
-                        <!-- 3 -->
-                        <div>
-                            <a href="">MAP URL here</a>
-                            <a href="">Other links here</a>
-                        </div>
+                            <!-- 3 -->
+                            <ng-container *ngIf="DisplayData.Urls.length != 0">
+                                <div class="marPad">
+                                    <a href="">MAP URL here</a>
+                                </div>
+                            </ng-container>
 
-                        <!-- 4 -->
-                        <div>
-                            story and hiking desction here.
+                            <mat-divider></mat-divider>
+
+                            <!-- 4 -->
+                            <ng-container *ngIf="DisplayData.storyList.length != 0">
+                                <div class="marPad">
+                                    story and hiking section here.
+                                </div>
+                            </ng-container>
                         </div>
                     </div>
-
                 </div>
             </div>
+
         </mat-drawer-container>
     </ng-container>
 </div>
@@ -68,6 +74,7 @@
 <!-- Loading effect popup -->
 <app-loading-effect [loaderType]="'load'" *ngIf="loading"></app-loading-effect>
 
+<!-- POP for Filter -->
 <ng-template #customDiv>
     <div style="padding: 5px; background-color: lightgreen;">
         <div>
@@ -76,6 +83,5 @@
     </div>
 </ng-template>
 
-<!-- POP for Filter -->
 <app-popup-generic [popupTitle]="'Filter'" [templete]="customDiv" [popupToggle]="popupFlag"
     (ChildCd)="doChanges($event)"></app-popup-generic>
