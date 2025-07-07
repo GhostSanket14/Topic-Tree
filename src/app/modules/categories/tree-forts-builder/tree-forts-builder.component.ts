@@ -43,16 +43,21 @@ export class TreeFortsBuilderComponent implements OnInit {
         break;
     }
   }
+
+  callurl(urlVal : string){
+    console.log(urlVal);
+    window.open(urlVal);
+  }
   searchList(event: Event) {
     const val = (event.target as HTMLInputElement).value;
 
   }
-
   LoadContentInfo(ItemId : string){
     this.DisplayData  = this.fortData.find((Data: { id: string }) => 
     { return Data.id === ItemId }
   );
   }
+
 
 
   // Small utility

@@ -50,7 +50,12 @@
                             <!-- 3 -->
                             <ng-container *ngIf="DisplayData.Urls.length != 0">
                                 <div class="marPad">
-                                    <a href="">MAP URL here</a>
+                                    <mat-selection-list [multiple]="false">
+                                        <mat-list-option *ngFor="let items of DisplayData.Urls" 
+                                        (selectedChange)="callurl(items.url)">
+                                          {{items.title}}
+                                        </mat-list-option>
+                                    </mat-selection-list>
                                 </div>
                             </ng-container>
 
