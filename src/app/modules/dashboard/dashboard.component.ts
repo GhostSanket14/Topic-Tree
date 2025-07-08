@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +14,7 @@ export class DashboardComponent implements OnInit {
   loading : boolean = false;
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
     this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
@@ -49,5 +50,19 @@ export class DashboardComponent implements OnInit {
 
     }
     this.loading = false;
+  }
+
+  navigate(cardTitle: String){
+    switch (cardTitle){
+      case 'Forts':
+        this._router.navigate(['/category-root', ]);
+        break;
+      case 'Forests':
+
+        break;
+      case 'Weapons':
+
+        break;
+    }
   }
 }

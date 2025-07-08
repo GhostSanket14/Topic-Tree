@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TreeCategoryComponent } from './tree-forts/tree-category.component';
+import { TreeCategoryComponent } from './tree-category/tree-category.component';
 import { TreeFortsBuilderComponent } from './tree-forts-builder/tree-forts-builder.component';
 import { PagesComponent } from '../pages/pages.component';
 
