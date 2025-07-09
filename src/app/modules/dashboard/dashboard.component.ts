@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
+import { title } from 'process';
 
 @Component({
   selector: 'app-dashboard',
@@ -20,7 +21,6 @@ export class DashboardComponent implements OnInit {
     this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
       const dbCardsObj = data.find(item => item.id === 'DbCards');
       this.cardsData = dbCardsObj.value;
-      console.log(this.cardsData);
     })
   }
 
@@ -53,16 +53,6 @@ export class DashboardComponent implements OnInit {
   }
 
   navigate(cardTitle: String){
-    switch (cardTitle){
-      case 'Forts':
-        this._router.navigate(['/category-root', ]);
-        break;
-      case 'Forests':
-
-        break;
-      case 'Weapons':
-
-        break;
-    }
+        this._router.navigate(['../categories/category-root'], { relativeTo: this._route, queryParams: { title: cardTitle }});
   }
 }

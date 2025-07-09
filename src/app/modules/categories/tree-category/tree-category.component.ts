@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { relative } from 'path';
 
 @Component({
   selector: 'app-tree-forts',
@@ -9,17 +10,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TreeCategoryComponent implements OnInit {
 
-  RequestCategory: string = "Forts"; // hard coded for now. Later will be decided based on what we click on Dashboard
+  RequestCategory: string = "Forts";
   categoryData: any = [];
 
-  constructor(private http: HttpClient, private _route: ActivatedRoute) { }
+  constructor(private http: HttpClient, private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
 
-    const categoryData = this._route.snapshot.paramMap.get('title');
-    if (categoryData != null && categoryData != undefined && categoryData != ''){
-      this.RequestCategory = String(categoryData);
-    }
+    this._route.queryParamMap.subscribe(params => {
+      const title = params.get('title');
+      console.log(title);
+      if (title != null && title != undefined && title != '') {
+        this.RequestCategory = String(title);
+      }
+    });
 
     this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
       const categoryMaster = data.find(item => item.id === 'DbCategories');
@@ -28,5 +32,19 @@ export class TreeCategoryComponent implements OnInit {
     document.documentElement.style.setProperty('--btn-color', '#34495e');
   }
 
+  navigate(engine: string) {
+    var builderEngineName = "";
+    switch (engine) {
+      case 'Forts':
+        console.log("In this");
+        builderEngineName = '../forts-engine';
+        break;
+      case 'Forests':
+        builderEngineName = '../forests-engine';
+        break;
 
+    }
+    console.log(this._router.navigate([builderEngineName], { relativeTo: this._route }));
+    this._router.navigate([builderEngineName], { relativeTo: this._route });
+  }
 }

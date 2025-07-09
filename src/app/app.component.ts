@@ -10,7 +10,6 @@ export class AppComponent {
   popupFlag = false;
 
   ngOnInit(): void {
-    console.log(this.popupFlag);
   }
 
   doChanges(EmittedChange: { field: string, event: Event, dataDump: any}){
