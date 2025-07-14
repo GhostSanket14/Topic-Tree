@@ -274,3 +274,21 @@ fieldset legend {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
+
+
+
+.marPad {
+    margin: 5px 5px 5px 10px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.boxShadow {
+    box-shadow: 0px 0px 2px rgb(109, 109, 109);
+    border-radius: 7px;
+}
+
+.infoPresent {
+    padding: 6px;
+    border-radius: 7px;
+}

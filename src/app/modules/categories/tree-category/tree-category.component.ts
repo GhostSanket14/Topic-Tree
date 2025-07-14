@@ -11,11 +11,14 @@ import { relative } from 'path';
 export class TreeCategoryComponent implements OnInit {
 
   RequestCategory: string = "Forts";
+  loading: boolean = false;
   categoryData: any = [];
 
   constructor(private http: HttpClient, private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
+
+    this.loading = true;
 
     this._route.queryParamMap.subscribe(params => {
       const title = params.get('title');
@@ -30,6 +33,12 @@ export class TreeCategoryComponent implements OnInit {
       this.categoryData = (categoryMaster.value).find((item: { caterogyTitle: any; }) => item.caterogyTitle === this.RequestCategory);
     });
     document.documentElement.style.setProperty('--btn-color', '#34495e');
+
+  }
+
+  ngAfterViewInit(): void {
+    this.loading = false;    
+    
   }
 
   navigate(engine: string) {

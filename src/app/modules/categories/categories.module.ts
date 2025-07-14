@@ -6,12 +6,14 @@ import { TreeCategoryComponent } from './tree-category/tree-category.component';
 import { MaterialsModule } from 'src/app/shared/materials/materials.module';
 import { TreeFortsBuilderComponent } from './tree-forts-builder/tree-forts-builder.component';
 import { SharedComponentModule } from "../../shared/shared-component/shared-component.module";
+import { TreeWeaponsBuilderComponent } from './tree-weapons-builder/tree-weapons-builder.component';
 
 
 @NgModule({
   declarations: [
     TreeCategoryComponent,
-    TreeFortsBuilderComponent
+    TreeFortsBuilderComponent,
+    TreeWeaponsBuilderComponent
   ],
   imports: [
     CommonModule,

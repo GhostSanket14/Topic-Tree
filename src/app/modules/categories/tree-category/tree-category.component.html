@@ -6,7 +6,7 @@
     <div class="Banner">
         <h1><strong>{{categoryData.caterogyTitle}}</strong></h1>
         <mat-divider></mat-divider>
-        <div class="richTextBlock">
+        <div class="richTextBlock marPad">
             <span>
                 {{categoryData.caterogyDesc}}
             </span>
@@ -19,3 +19,6 @@
         </div>
     </div>
 </div>
+
+<!-- Loader component -->
+<app-loading-effect [loaderType]="'Load'" *ngIf="loading"></app-loading-effect>

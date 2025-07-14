@@ -11,7 +11,7 @@ import { SharedComponentModule } from '../shared/shared-component/shared-compone
 @NgModule({
   declarations: [
     DashboardComponent,
-    PagesComponent
+    PagesComponent,
     
   ],
   imports: [
