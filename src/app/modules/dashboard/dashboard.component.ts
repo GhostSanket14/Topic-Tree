@@ -45,7 +45,7 @@ export class DashboardComponent implements OnInit {
       break;
 
       case 'default':
-        document.documentElement.style.setProperty('--main-bgcolor', '#ffffff');
+        this.bgImage = "";
         break;
 
     }

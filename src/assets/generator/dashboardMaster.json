@@ -4,32 +4,9 @@
         "value": [
             {
                 "cardTitle": "Forts",
-                "cardDesc": "Indian forts are majestic symbols of the country's rich architectural and military heritage, built by various dynasties across centuries. These structures reflect strategic brilliance and cultural grandeur, often perched on hills or surrounded by vast landscapes.",
-                "cardStyle": "#{background-color: #116530;}",
+                "cardDesc": "Forts in India stand as majestic witnesses to the subcontinent’s rich and diverse history, spanning from the ancient Mauryan Empire to the valiant Maratha reign. These monumental structures were more than just military bastions — they served as centers of administration, trade, culture, and resistance. The Mauryas laid early foundations of fort architecture, emphasizing strategic location and defense. This legacy evolved through the Rajput hill forts of Rajasthan, the grand citadels of the Delhi Sultanate and Mughal Empire, and culminated in the robust, hill-clinging forts of the Marathas, designed for guerrilla warfare. Each fort tells a unique story through its ramparts, bastions, and gateways — stories of valor, empire, resistance, and architectural brilliance that define India’s historical landscape.",
                 "cardIcon": "fa-brands fa-fort-awesome",
                 "bgImage": "/assets/images/redfort.png"
-            },
-            {
-                "cardTitle": "Forests",
-                "cardDesc": "Indian forests are diverse ecosystems ranging from dense tropical rainforests to dry deciduous woodlands, home to rich biodiversity. They play a vital role in supporting wildlife, preserving climate balance, and sustaining millions of livelihoods.",
-                "cardStyle": "#{background-color: #116530;}",
-                "cardIcon": "fa-solid fa-tree",
-                "bgImage": "/assets/images/forest.jpg"
-            }
-        ]
-    },
-    {
-        "id": "DbCategories",
-        "value": [
-            {
-                "caterogyTitle": "Forts",
-                "caterogyDesc": "Forts in India stand as majestic witnesses to the subcontinent’s rich and diverse history, spanning from the ancient Mauryan Empire to the valiant Maratha reign. These monumental structures were more than just military bastions — they served as centers of administration, trade, culture, and resistance. The Mauryas laid early foundations of fort architecture, emphasizing strategic location and defense. This legacy evolved through the Rajput hill forts of Rajasthan, the grand citadels of the Delhi Sultanate and Mughal Empire, and culminated in the robust, hill-clinging forts of the Marathas, designed for guerrilla warfare. Each fort tells a unique story through its ramparts, bastions, and gateways — stories of valor, empire, resistance, and architectural brilliance that define India’s historical landscape.",
-                "categoryImageUrl": "assets/images/fortBanner2.jpg"
-            },
-            {
-                "caterogyTitle": "Forests",
-                "caterogyDesc": "Forests in India are living chronicles of the subcontinent’s ecological wealth and cultural heritage, spanning millennia of natural evolution and human interaction. From the sacred groves of ancient tribal communities to the sprawling jungles chronicled in epics like the Ramayana, these woodlands have served as more than habitats — they’ve been sanctuaries of spirituality, survival, and sovereignty. India's forest legacy ranges from the lush, rain-drenched canopies of the Western Ghats and Northeast to the dry, deciduous terrains of Central India and thorn forests of the Deccan. These ecosystems nurtured countless species and sheltered civilizations, warriors, sages, and rebels alike. Today, they stand as vital guardians against climate change, reservoirs of biodiversity, and symbols of coexistence — each rustling leaf echoing tales of nature’s resilience and India's deep-rooted connection to its wild heart.",
-                "categoryImageUrl": "assets/images/forestBanner1.jpg"
             }
         ]
     }

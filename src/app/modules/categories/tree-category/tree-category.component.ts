@@ -29,8 +29,8 @@ export class TreeCategoryComponent implements OnInit {
     });
 
     this.http.get<any[]>('assets/generator/dashboardMaster.json').subscribe(data => {
-      const categoryMaster = data.find(item => item.id === 'DbCategories');
-      this.categoryData = (categoryMaster.value).find((item: { caterogyTitle: any; }) => item.caterogyTitle === this.RequestCategory);
+      const categoryMaster = data.find(item => item.id === 'DbCards');
+      this.categoryData = (categoryMaster.value).find((item: { cardTitle: any; }) => item.cardTitle === this.RequestCategory);
     });
     document.documentElement.style.setProperty('--btn-color', '#34495e');
 
@@ -45,12 +45,14 @@ export class TreeCategoryComponent implements OnInit {
     var builderEngineName = "";
     switch (engine) {
       case 'Forts':
-        console.log("In this");
         builderEngineName = '../forts-engine';
         break;
       case 'Forests':
         builderEngineName = '../forests-engine';
         break;
+      case 'Weapons':
+        builderEngineName = '../weapons-engine';
+      break;
 
     }
     console.log(this._router.navigate([builderEngineName], { relativeTo: this._route }));

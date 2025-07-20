@@ -11,31 +11,26 @@
 .col1 {
     padding: 1px;
     margin: 1px;
-    width: 95vw;
 }
 
 .col2 {
     padding: 1px;
     margin: 1px;
-    width: 75vw;
 }
 
 .col3 {
     padding: 1px;
     margin: 1px;
-    width: 50vw;
 }
 
 .col4 {
     padding: 1px;
     margin: 1px;
-    width: 25vw;
 }
 
 .col5 {
     padding: 1px;
     margin: 1px;
-    width: 10vw;
 }
 
 // Component Root size & formatting
@@ -65,7 +60,7 @@
 
 @media (min-width: 451px) {
     .Banner {
-        max-width: 100%;
+        max-width: 90%;
     }
 
 }
