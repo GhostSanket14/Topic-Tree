@@ -11,11 +11,22 @@ body {
 
 .controls {
   display: flex;
+  flex-direction: column;
+  /* stack items vertically on small screens */
   gap: 10px;
-  align-items: center;
+  align-items: stretch;
   padding: 10px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #ddd;
+}
+
+/* 📱 Tablet and above: switch to row */
+@media (min-width: 500px) {
+  .controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 input[type="text"] {
@@ -37,6 +48,15 @@ button {
 #map {
   flex: 1;
   height: calc(75vh - 60px); // Adjust based on controls
+  margin: 20px;
+  border: 1px solid #333;
+  border-radius: 7px;
+}
+
+@media (max-width: 451px) {
+  #map {
+    margin: 20px;
+  }
 }
 
 .route-popup {

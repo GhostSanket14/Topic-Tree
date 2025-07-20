@@ -1,7 +1,7 @@
 <div class="controls">
-    <input type="text" placeholder="Search location..." [(ngModel)]="searchText" />
-    <button (click)="searchLocation()">Search</button>
-    <button (click)="goToMyLocation()">📍 My Location</button>
+    <input type="text" class="customInput" placeholder="Search location..." [(ngModel)]="searchText" />
+    <button mat-raised-button class="altActionBtn" (click)="searchLocation()">Search</button>
+    <button mat-raised-button class="altActionBtn" (click)="goToMyLocation()"> My Location</button>
 </div>
 
 <div id="map"></div>

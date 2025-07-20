@@ -1,7 +1,7 @@
 <div class="Root richTextBlock">
     <ng-container>
 
-        <mat-drawer-container class="drawer-container" [hasBackdrop]="false">
+        <mat-drawer-container [hasBackdrop]="false">
             <mat-drawer #drawer mode="over" position="start" class="drawer">
                 <div>
                     <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -47,17 +47,16 @@
                                 </div>
                             </div>
 
-                            <!-- 3 -->
-                            <!-- <ng-container *ngIf="DisplayData?.Urls?.length != 0">
-                                <div class="marPad">
-                                    <mat-selection-list [multiple]="false">
-                                        <mat-list-option *ngFor="let items of DisplayData?.Urls"
-                                            (selectedChange)="callurl(items?.url)">
-                                            {{items?.title}}
-                                        </mat-list-option>
-                                    </mat-selection-list>
-                                </div>
-                            </ng-container> -->
+                            <mat-divider></mat-divider>
+
+                            <!-- other Data -->
+                            <ng-container *ngIf="DisplayData?.Urls?.length != 0">
+                                
+                            </ng-container>
+
+                            <mat-divider></mat-divider>
+
+                            <!-- Map -->
                             <ng-container>
                                 <div class="mapHolder">
                                     <app-osm-maps></app-osm-maps>

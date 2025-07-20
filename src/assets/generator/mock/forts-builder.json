@@ -5,14 +5,6 @@
             {
                 "id": "RaFo01",
                 "name": "Rajgad Fort"
-            },
-            {
-                "id": "RaFo02",
-                "name": "Raigad Fort"
-            },
-            {
-                "id": "SiGa03",
-                "name": "Sighgad Fort"
             }
         ]
     },
@@ -22,42 +14,13 @@
             {
                 "id": "RaFo01",
                 "name": "Rajgad Fort",
-                "imgUrl": "assets/images/forts/testImg.webp",
-                "imgAuthor": "Example 101",
-                "ImgAlt": "Rajgad Fort",
-                "Desc": "   Rajgad Fort, located near Pune in <strong>Maharashtra</strong>, is one of the most historically significant forts in India. Once the capital of the Maratha Empire under Chhatrapati Shivaji Maharaj, it served as a strategic and administrative center. Built atop the Murumbadevi Dongar hill, the fort stands at 4,500 feet above sea level and offers panoramic views of the Sahyadri ranges. Its unique architecture includes massive gates, water cisterns, palaces, and secret escape routes. Key attractions include Padmavati Machi, Suvela Machi, and Balekilla. Rich in history and natural beauty, Rajgad is a popular destination for trekkers and history enthusiasts alike.",
-                "Urls": [
-                    {
-                        "title": "",
-                        "url": ""
-                    }
-                ],
-                "storyList": [
-                ]
-            },
-            {
-                "id": "RaFo02",
-                "name": "Raigad Fort",
-                "imgUrl": "",
-                "imgAuthor": "Example 1",
-                "ImgAlt": "",
-                "Desc": "Descripyion 1",
-                "Urls": [],
-                "storyList": [
-                ]
-            },
-            {
-                "id": "SiGa03",
-                "name": "Sighgad Fort",
                 "imgUrl": "",
                 "imgAuthor": "",
                 "ImgAlt": "",
                 "Desc": "",
                 "Urls": [
-
                 ],
                 "storyList": [
-
                 ]
             }
         ]
