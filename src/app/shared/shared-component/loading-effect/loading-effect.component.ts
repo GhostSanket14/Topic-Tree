@@ -7,9 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LoadingEffectComponent implements OnInit {
 
-  // LOD - loading SER - searching EDT - editing
   @Input('loaderType') loader: string = 'load';
-
 
   constructor() { }
 

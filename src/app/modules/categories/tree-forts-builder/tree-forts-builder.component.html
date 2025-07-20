@@ -20,7 +20,7 @@
                 <div>
                     <div>
                         <div class="contentPresent" *ngFor="let item of fortList;let i = index">
-                            <h3 (click)="LoadContentInfo(item.id)">{{item.name}}</h3>
+                            <h3 (click)="LoadContentInfo(item?.id)">{{item?.name}}</h3>
                         </div>
                     </div>
                 </div>
@@ -33,48 +33,44 @@
                     <!-- Content Render -->
                     <div class="richTextBlock">
                         <!-- 1 -->
-                        <h1 align="center">{{DisplayData.name}}</h1>
+                        <h1 align="center">{{DisplayData?.name}}</h1>
                         <div class="boxShadow">
                             <!-- 2 -->
                             <div class="imgAndData">
                                 <div>
-                                    <img [src]="DisplayData.imgUrl" [alt]="DisplayData.ImgAlt">
-                                    <small class="imageWithOverlay">Image By: {{DisplayData.imgAuthor}}</small>
+                                    <img [src]="DisplayData?.imgUrl" [alt]="DisplayData?.ImgAlt">
+                                    <small class="imageWithOverlay">Image By: {{DisplayData?.imgAuthor}}</small>
                                 </div>
                                 <div class="infoPresent">
                                     <h2></h2>
-                                    <pre [innerHTML]="DisplayData.Desc" class="textBlock"></pre>
+                                    <pre [innerHTML]="DisplayData?.Desc" class="textBlock"></pre>
                                 </div>
                             </div>
 
                             <!-- 3 -->
-                            <ng-container *ngIf="DisplayData.Urls.length != 0">
+                            <!-- <ng-container *ngIf="DisplayData?.Urls?.length != 0">
                                 <div class="marPad">
                                     <mat-selection-list [multiple]="false">
-                                        <mat-list-option *ngFor="let items of DisplayData.Urls" 
-                                        (selectedChange)="callurl(items.url)">
-                                          {{items.title}}
+                                        <mat-list-option *ngFor="let items of DisplayData?.Urls"
+                                            (selectedChange)="callurl(items?.url)">
+                                            {{items?.title}}
                                         </mat-list-option>
                                     </mat-selection-list>
                                 </div>
-                            </ng-container>
-
-                            <mat-divider></mat-divider>
-
-                            <!-- 4 -->
-                            <ng-container *ngIf="DisplayData.storyList.length != 0">
-                                <div class="marPad">
-                                    story and hiking section here.
+                            </ng-container> -->
+                            <ng-container>
+                                <div class="mapHolder">
+                                    <app-osm-maps></app-osm-maps>
                                 </div>
                             </ng-container>
                         </div>
                     </div>
                 </div>
             </div>
-
         </mat-drawer-container>
     </ng-container>
 </div>
+
 
 <!-- Loading effect popup -->
 <app-loading-effect [loaderType]="'load'" *ngIf="loading"></app-loading-effect>

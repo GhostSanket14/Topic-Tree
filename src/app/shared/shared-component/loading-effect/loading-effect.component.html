@@ -1,16 +1,30 @@
 <div class="loading-screen">
     <!-- loading -->
     <ng-container *ngIf="loader==='load'">
-        <i class="fa-solid fa-spinner fa-spin" id="_icons"></i>
+        <i class="fa-solid fa-spinner fa-spin" id="_icons_loading"></i>
     </ng-container>
 
     <!-- Searching -->
     <ng-container *ngIf="loader==='search'">
-        <i class="fa-solid fa-magnifying-glass fa-beat-fade" id="_icons"></i>
+        <i class="fa-solid fa-magnifying-glass fa-beat-fade" id="_icons_loading"></i>
     </ng-container>
 
     <!-- Updating / Endting -->
     <ng-container *ngIf="loader==='edit'">
-        <i class="fa-solid fa-marker fa-bounce" id="_icons"></i>
+        <i class="fa-solid fa-marker fa-bounce" id="_icons_loading"></i>
     </ng-container>
+
+    <!-- Brick laying animation -->
+    <ng-container *ngIf="loader==='bricks'">
+        <div class="brickWall">
+            <div class="brick top" style="--i: 1;"></div>
+            <div class="brick top" style="--i: 2;"></div>
+            <div class="brick middle" style="--i: 3;"></div>
+            <div class="brick bottom" style="--i: 5;"></div>
+            <div class="brick bottom" style="--i: 6;"></div>
+            <div class="brick bottom" style="--i: 7;"></div>
+            <div class="brick bottom" style="--i: 8;"></div>
+        </div>
+    </ng-container>
+
 </div>

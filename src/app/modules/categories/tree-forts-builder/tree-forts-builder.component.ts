@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDrawer } from '@angular/material/sidenav';
+import { OsmMapsComponent } from '../../../shared/shared-component/osm-maps/osm-maps.component'
 
 @Component({
   selector: 'app-tree-forts-builder',
@@ -12,6 +13,7 @@ export class TreeFortsBuilderComponent implements OnInit {
 [x: string]: any;
 
   @ViewChild(MatDrawer) drawer!: MatDrawer;
+  @ViewChild(OsmMapsComponent) mapsCompo!: OsmMapsComponent;
   loading: boolean = false;
   popupFlag: boolean = false;
 
@@ -24,18 +26,20 @@ export class TreeFortsBuilderComponent implements OnInit {
   ngOnInit(): void {
 
     this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data=>{
-      const fortListObj = data.find((item: { id: string; }) => item.id === 'FortList');
-      this.fortList = fortListObj.value;
+      const fortListObj = data?.find((item: { id: string; }) => item?.id === 'FortList');
+      this.fortList = fortListObj?.value;
     });
 
     this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data => {
-      const fortListObj = data.find((item: { id: string; }) => item.id === 'FortData');
-      this.fortData = fortListObj.value;
+      const fortListObj = data?.find((item: { id: string; }) => item?.id === 'FortData');
+      this.fortData = fortListObj?.value;
       // Loading 1 deafult fort
       this.LoadContentInfo("RaFo01");
+      this.mapsCompo.searchLocationCall(this.DisplayData?.name);
     });
 
   }
+  // Change Emitter
   doChanges(payload: { field: string, event: Event, dataDump: any }) {
     switch (payload.field) {
       case 'popupGeneric':
@@ -44,20 +48,24 @@ export class TreeFortsBuilderComponent implements OnInit {
     }
   }
 
+  // Business logic
+
   callurl(urlVal : string){
     console.log(urlVal);
     window.open(urlVal);
   }
+
   searchList(event: Event) {
     const val = (event.target as HTMLInputElement).value;
 
   }
+
   LoadContentInfo(ItemId : string){
     this.DisplayData  = this.fortData.find((Data: { id: string }) => 
     { return Data.id === ItemId }
   );
+    this.mapsCompo.searchLocationCall(this.DisplayData?.name);
   }
-
 
 
   // Small utility
