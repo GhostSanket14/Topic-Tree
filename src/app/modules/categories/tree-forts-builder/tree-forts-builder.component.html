@@ -38,8 +38,10 @@
                             <!-- 2 -->
                             <div class="imgAndData">
                                 <div>
-                                    <img [src]="DisplayData?.imgUrl" [alt]="DisplayData?.ImgAlt">
-                                    <small class="imageWithOverlay">Image By: {{DisplayData?.imgAuthor}}</small>
+                                    <img [src]="DisplayData?.imgUrl !== ''? DisplayData?.imgUrl : this.defaultImage"
+                                        [alt]="DisplayData?.ImgAlt">
+                                    <small class="imageWithOverlay">Image By: {{DisplayData?.imgAuthor !== ''
+                                        ?DisplayData?.imgAuthor: 'Topic Tree' }}</small>
                                 </div>
                                 <div class="infoPresent">
                                     <h2></h2>
@@ -50,8 +52,25 @@
                             <mat-divider></mat-divider>
 
                             <!-- other Data -->
-                            <ng-container *ngIf="DisplayData?.Urls?.length != 0">
-                                
+                            <ng-container *ngIf="DisplayData?.highlight?.length != 0">
+                                <div class="marPad richTextBlock">
+                                    <div *ngFor="let item1 of DisplayData?.highlight">
+                                        <ul *ngFor="let item2 of item1.list">
+                                            <ng-container *ngIf="!checkArray(item2.value)">
+                                                <li style="margin: 2px; padding: 3px;"> <strong>{{item2.title}}</strong>
+                                                    : {{item2.value}} </li>
+                                            </ng-container>
+                                            <ng-container *ngIf="checkArray(item2.value)">
+                                                <li style="margin: 2px; padding: 3px;"> <strong>{{item2.title}}</strong>
+                                                    :
+                                                    <ul *ngFor="let i2Val of item2.value">
+                                                        <li style="margin-left: 20px;">{{i2Val}}</li>
+                                                    </ul>
+                                                </li>
+                                            </ng-container>
+                                        </ul>
+                                    </div>
+                                </div>
                             </ng-container>
 
                             <mat-divider></mat-divider>

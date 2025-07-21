@@ -4,7 +4,139 @@
         "value": [
             {
                 "id": "RaFo01",
-                "name": "Rajgad Fort"
+                "name": "Raigad Fort"
+            },
+            {
+                "id": "DeFo02",
+                "name": "Devgiri Fort"
+            },
+            {
+                "id": "RaFo03",
+                "name": "Rajmachi Fort"
+            },
+            {
+                "id": "RaFo04",
+                "name": "Ratangad Fort"
+            },
+            {
+                "id": "BiFo05",
+                "name": "Birwadi Fort"
+            },
+            {
+                "id": "MuJa06",
+                "name": "Murud Janjira Fort"
+            },
+            {
+                "id": "SiFo07",
+                "name": "Sinhagad Fort"
+            },
+            {
+                "id": "Ha08",
+                "name": "Harishchandragad"
+            },
+            {
+                "id": "ToFo09",
+                "name": "Torna Fort"
+            },
+            {
+                "id": "SiFo10",
+                "name": "Sindhudurg Fort"
+            },
+            {
+                "id": "LoFo11",
+                "name": "Lohagad Fort"
+            },
+            {
+                "id": "AhFo12",
+                "name": "Ahmednagar Fort"
+            },
+            {
+                "id": "VaFo13",
+                "name": "Vasai Fort"
+            },
+            {
+                "id": "RaFo14",
+                "name": "Raigad Fort"
+            },
+            {
+                "id": "ShFo15",
+                "name": "Shivneri Fort"
+            },
+            {
+                "id": "AjFo16",
+                "name": "Ajinkyatara Fort"
+            },
+            {
+                "id": "Vi17",
+                "name": "Vishalgad"
+            },
+            {
+                "id": "PaFo18",
+                "name": "Panhala Fort"
+            },
+            {
+                "id": "SaFo19",
+                "name": "Sajjangad Fort"
+            },
+            {
+                "id": "ArFo20",
+                "name": "Arnala Fort"
+            },
+            {
+                "id": "VaFo21",
+                "name": "Vasota Fort"
+            },
+            {
+                "id": "KaFo22",
+                "name": "Karnala Fort"
+            },
+            {
+                "id": "PrFo23",
+                "name": "Prabalgad Fort"
+            },
+            {
+                "id": "SaDu24",
+                "name": "Sangram Durg"
+            },
+            {
+                "id": "AlFo25",
+                "name": "Alang Fort"
+            },
+            {
+                "id": "PrFo26",
+                "name": "Pratapgad Fort"
+            },
+            {
+                "id": "Pufo27",
+                "name": "Purandar fort"
+            },
+            {
+                "id": "DeFo28",
+                "name": "Devgad Fort"
+            },
+            {
+                "id": "AcFo29",
+                "name": "Achala Fort"
+            },
+            {
+                "id": "DhFo30",
+                "name": "Dhodap Fort"
+            },
+            {
+                "id": "BaFo31",
+                "name": "Balapur Fort"
+            },
+            {
+                "id": "AkFo32",
+                "name": "Akola Fort"
+            },
+            {
+                "id": "Ga33",
+                "name": "Gagangad"
+            },
+            {
+                "id": "BaFo34",
+                "name": "Bankot Fort"
             }
         ]
     },
@@ -13,15 +145,48 @@
         "value": [
             {
                 "id": "RaFo01",
-                "name": "Rajgad Fort",
+                "name": "Raigad Fort",
                 "imgUrl": "",
                 "imgAuthor": "",
                 "ImgAlt": "",
-                "Desc": "",
-                "Urls": [
+                "Desc": "Raigad Fort was built by Hiraji Indulkar, the chief architect under the orders of Chhatrapati Shivaji Maharaj in the 17th century. This majestic fort is one of the most significant sites in Indian history, especially during the Maratha Empire. It served as the capital of the Maratha kingdom when Shivaji was crowned as the Chhatrapati in 1674, marking the rise of indigenous rule in India after centuries of foreign dominance. The fort remained a symbol of Maratha strength and resilience through various periods, including confrontations with the Mughals and the British. Strategically perched atop the Sahyadri range at 2,700 feet above sea level, Raigad was nearly impregnable, with only one main entrance (Maha Darwaja) and steep cliffs on all sides, making it a perfect defense post and command center. Due to its elevation and location, it also controlled major inland trade routes between the Konkan coast and the Deccan plateau, making it vital for commerce and logistics. The first king of the fort was Chhatrapati Shivaji Maharaj, and the last ruler to hold it before British capture in 1818 was Bajirao II, after which the fort fell under British control.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Moderate to Difficult – involves climbing over 1,700 steps or using the ropeway"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "October to February for pleasant weather and clear views"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Rajwada (Shivaji Maharajs palace ruins)",
+                                    "Jagdishwar Temple",
+                                    "Shiv Samadhi (Shivaji Maharajs tomb)",
+                                    "Takmak Tok (execution point with breathtaking views)",
+                                    "Hirkani Buruj",
+                                    "Maha Darwaja"
+                                ]
+                            }
+                        ]
+                    }
                 ],
-                "storyList": [
-                ]
+                "storyList": []
             }
         ]
     }

@@ -10,14 +10,15 @@ import { OsmMapsComponent } from '../../../shared/shared-component/osm-maps/osm-
   styleUrls: ['./tree-forts-builder.component.scss']
 })
 export class TreeFortsBuilderComponent implements OnInit {
-[x: string]: any;
+  [x: string]: any;
 
   @ViewChild(MatDrawer) drawer!: MatDrawer;
   @ViewChild(OsmMapsComponent) mapsCompo!: OsmMapsComponent;
   loading: boolean = false;
   popupFlag: boolean = false;
+  defaultImage: string = "assets/images/forts/FortDefault.png";
 
-  fortList : any = [];
+  fortList: any = [];
   fortData: any = [];
   DisplayData: any;
 
@@ -25,7 +26,7 @@ export class TreeFortsBuilderComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data=>{
+    this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data => {
       const fortListObj = data?.find((item: { id: string; }) => item?.id === 'FortList');
       this.fortList = fortListObj?.value;
     });
@@ -35,7 +36,7 @@ export class TreeFortsBuilderComponent implements OnInit {
       this.fortData = fortListObj?.value;
       // Loading 1 deafult fort
       this.LoadContentInfo("RaFo01");
-      this.mapsCompo.searchLocationCall(this.DisplayData?.name);
+      // this.mapsCompo.searchLocationCall(this.DisplayData?.name);
     });
 
   }
@@ -50,7 +51,7 @@ export class TreeFortsBuilderComponent implements OnInit {
 
   // Business logic
 
-  callurl(urlVal : string){
+  callurl(urlVal: string) {
     console.log(urlVal);
     window.open(urlVal);
   }
@@ -60,11 +61,18 @@ export class TreeFortsBuilderComponent implements OnInit {
 
   }
 
-  LoadContentInfo(ItemId : string){
-    this.DisplayData  = this.fortData.find((Data: { id: string }) => 
-    { return Data.id === ItemId }
-  );
-    this.mapsCompo.searchLocationCall(this.DisplayData?.name);
+  LoadContentInfo(ItemId: string) {
+    this.DisplayData = this.fortData.find((Data: { id: string }) => { return Data.id === ItemId }
+    );
+    // this.mapsCompo.searchLocationCall(this.DisplayData?.name);
+  }
+
+  checkArray(val: any): boolean {
+    if (Array.isArray(val)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 

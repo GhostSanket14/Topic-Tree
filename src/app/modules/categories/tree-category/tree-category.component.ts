@@ -55,7 +55,7 @@ export class TreeCategoryComponent implements OnInit {
       break;
 
     }
-    console.log(this._router.navigate([builderEngineName], { relativeTo: this._route }));
+    // console.log(this._router.navigate([builderEngineName], { relativeTo: this._route }));
     this._router.navigate([builderEngineName], { relativeTo: this._route });
   }
 }
