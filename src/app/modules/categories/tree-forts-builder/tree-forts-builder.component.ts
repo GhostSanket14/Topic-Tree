@@ -28,7 +28,7 @@ export class TreeFortsBuilderComponent implements OnInit {
 
     this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data => {
       const fortListObj = data?.find((item: { id: string; }) => item?.id === 'FortList');
-      this.fortList = fortListObj?.value?.find((obj: { visible: boolean; }) => { obj.visible === true });
+      this.fortList = fortListObj?.value?.filter((obj: { visible: boolean; }) => { return obj.visible == true });
     });
 
     this.http.get<any>('assets/generator/mock/forts-builder.json').subscribe(data => {
