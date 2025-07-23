@@ -4,43 +4,53 @@
         "value": [
             {
                 "id": "RaFo01",
-                "name": "Raigad Fort"
+                "name": "Raigad Fort",
+                "visible": true
             },
             {
                 "id": "DeFo02",
-                "name": "Devgiri Fort"
+                "name": "Devgiri Fort",
+                "visible": true
             },
             {
                 "id": "RaFo03",
-                "name": "Rajmachi Fort"
+                "name": "Rajmachi Fort",
+                "visible": true
             },
             {
                 "id": "RaFo04",
-                "name": "Ratangad Fort"
+                "name": "Ratangad Fort",
+                "visible": true
             },
             {
                 "id": "BiFo05",
-                "name": "Birwadi Fort"
+                "name": "Birwadi Fort",
+                "visible": true
             },
             {
                 "id": "MuJa06",
-                "name": "Murud Janjira Fort"
+                "name": "Murud Janjira Fort",
+                "visible": true
             },
             {
                 "id": "SiFo07",
-                "name": "Sinhagad Fort"
+                "name": "Sinhagad Fort",
+                "visible": true
             },
             {
                 "id": "Ha08",
-                "name": "Harishchandragad"
+                "name": "Harishchandragad",
+                "visible": true
             },
             {
                 "id": "ToFo09",
-                "name": "Torna Fort"
+                "name": "Torna Fort",
+                "visible": true
             },
             {
                 "id": "SiFo10",
-                "name": "Sindhudurg Fort"
+                "name": "Sindhudurg Fort",
+                "visible": true
             },
             {
                 "id": "LoFo11",
@@ -181,6 +191,183 @@
                                     "Takmak Tok (execution point with breathtaking views)",
                                     "Hirkani Buruj",
                                     "Maha Darwaja"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "DeFo02",
+                "name": "Devgiri Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Devgiri Fort, also known as Daulatabad Fort, was originally built by Bhillama V, a ruler of the Yadava dynasty, in the 12th century. The fort holds immense historical significance, having been the capital of multiple dynasties over centuries including the Yadavas, Delhi Sultanate under Muhammad bin Tughlaq, the Bahmani Sultanate, and later the Mughals. Its strategic location in the Deccan made it a key point of control for those aiming to dominate peninsular India. Surrounded by steep cliffs and protected by a complex defense system including moats, false doors, and a unique zigzag entry, it was nearly impenetrable. Devgiri also lay on important inland trade routes between north and south India, facilitating economic exchanges and taxation. The first known ruler was Bhillama V, and the last significant ruling authority before British dominance was the Nizam of Hyderabad.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Moderate – involves stairs, slopes, and narrow passages"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "November to February for comfortable weather and clear views"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Chand Minar",
+                                    "Bharat Mata Temple",
+                                    "Cannon post (Mendha Tope)",
+                                    "Royal Palace ruins",
+                                    "Dark Passage (Andheri passage)",
+                                    "Hathi Haud (Elephant Tank)"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "RaFo03",
+                "name": "Rajmachi Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Rajmachi Fort, located in the Sahyadri ranges near Lonavala, was built by the Satavahanas around the 2nd century CE and later fortified by Chhatrapati Shivaji Maharaj in the 17th century. The fort has historical significance as it played a crucial role during the Maratha-Mughal wars and was used as a watchpost to monitor movements through the Bhor Ghat trade route. Its location between the Mumbai-Pune route made it a strategically important fort for surveillance and defense. The fort oversaw one of the key ancient trade routes connecting the Konkan coast with the Deccan Plateau. The first known rulers were the Satavahanas, and the fort later came under British control after being taken from the Marathas.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Easy to Moderate – accessible from Lonavala or Karjat with scenic trails"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "June to February, especially scenic during monsoon"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Shrivardhan and Manaranjan Balekillas",
+                                    "Rajmachi Lake",
+                                    "Temples near the base village",
+                                    "Sunset viewpoints",
+                                    "Ruins of old structures"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "RaFo04",
+                "name": "Ratangad Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Ratangad Fort, located in the Ahmednagar district of Maharashtra, was captured by Chhatrapati Shivaji Maharaj in the 17th century from local hill tribes. It served as a strategic watchtower fort in the Western Ghats and was part of the northern Maratha defensive line. Historically, it was important for controlling the surrounding regions and served as a lookout over the Bhandardara and nearby trade routes. The fort is naturally fortified and includes unique rock formations, including the iconic 'Nedhe' or 'Eye of the Needle'. It overlooked major commercial routes connecting inland Maharashtra to coastal ports. The first known ruler was a local tribal chief, and Chhatrapati Shivaji Maharaj was one of the most prominent rulers associated with the fort.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Moderate to Difficult – steep ascents and rock-cut steps"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "October to February for dry and clear trekking conditions"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Nedhe (Natural rock hole)",
+                                    "Amruteshwar Temple (at base)",
+                                    "Caves and water tanks",
+                                    "Sunrise view from top",
+                                    "Fortification walls and bastions"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "BiFo05",
+                "name": "Birwadi Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Birwadi Fort, located in the Raigad district of Maharashtra, was built by Chhatrapati Shivaji Maharaj in the 17th century to keep a watch on the Revdanda creek and nearby trade routes. It held tactical importance in guarding the western coastline and acted as a checkpoint to monitor maritime trade and enemy movement. Its elevated position gave it a commanding view over the Konkan belt, enabling quick communication with neighboring forts. Though relatively small, Birwadi helped regulate regional trade and tax collection from coastal commerce. The first and last king associated with this fort was Chhatrapati Shivaji Maharaj, under whose command it was built and managed.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Easy – short and well-defined trail, ideal for beginners"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "October to March for pleasant climate and visibility"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Main entrance gate with Maratha architecture",
+                                    "Fort walls and bastions",
+                                    "Viewpoint overlooking Revdanda creek",
+                                    "Water cisterns",
+                                    "Maruti Temple"
                                 ]
                             }
                         ]

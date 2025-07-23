@@ -51,9 +51,9 @@
 
                             <mat-divider></mat-divider>
 
-                            <!-- other Data -->
+                            <!-- Highlight Data in bulletpoints -->
                             <ng-container *ngIf="DisplayData?.highlight?.length != 0">
-                                <div class="marPad richTextBlock">
+                                <div style="padding: 15px; margin: 5px;">
                                     <div *ngFor="let item1 of DisplayData?.highlight">
                                         <ul *ngFor="let item2 of item1.list">
                                             <ng-container *ngIf="!checkArray(item2.value)">
@@ -91,7 +91,7 @@
 
 
 <!-- Loading effect popup -->
-<app-loading-effect [loaderType]="'load'" *ngIf="loading"></app-loading-effect>
+<app-loading-effect [loaderType]="'bricks'" *ngIf="loading"></app-loading-effect>
 
 <!-- POP for Filter -->
 <ng-template #customDiv>
