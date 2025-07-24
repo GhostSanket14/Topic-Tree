@@ -21,7 +21,8 @@ const materialModules = [
   ReactiveFormsModule,
   MatProgressBarModule,
   MatListModule,
-  FormsModule
+  FormsModule,
+  MatListModule
 ];
 
 @NgModule({
