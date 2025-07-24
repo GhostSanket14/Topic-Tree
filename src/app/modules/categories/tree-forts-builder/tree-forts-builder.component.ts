@@ -38,7 +38,7 @@ export class TreeFortsBuilderComponent implements OnInit {
       this.LoadContentInfo("RaFo01");
       // this.mapsCompo.searchLocationCall(this.DisplayData?.name);
     });
-
+    document.documentElement.style.setProperty('--btn-color', '#18A558');
   }
   // Change Emitter
   doChanges(payload: { field: string, event: Event, dataDump: any }) {

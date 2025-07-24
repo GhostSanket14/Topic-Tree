@@ -28,7 +28,7 @@
                 "visible": true
             },
             {
-                "id": "MuJa06",
+                "id": "MuFo06",
                 "name": "Murud Janjira Fort",
                 "visible": true
             },
@@ -38,7 +38,7 @@
                 "visible": true
             },
             {
-                "id": "Ha08",
+                "id": "HaFo08",
                 "name": "Harishchandragad",
                 "visible": true
             },
@@ -368,6 +368,226 @@
                                     "Viewpoint overlooking Revdanda creek",
                                     "Water cisterns",
                                     "Maruti Temple"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "MuFo06",
+                "name": "Murud Janjira Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Murud Janjira Fort, located off the Arabian Sea coast near Murud in Maharashtra, was built in the late 15th century by a local fisherman-turned-ruler, Ram Patil, and later fortified extensively by the Siddis of African descent. The fort has major historical significance due to its unique record of never being conquered despite repeated attacks by the Marathas, Mughals, Dutch, Portuguese, and British. It served as a powerful maritime bastion of the Siddis and was crucial in controlling naval trade routes along the Konkan coast. Strategically constructed on an island with strong sea-facing defenses, it had 19 rounded bastions and secret entrances. Murud Janjira played a key role in regulating coastal trade, levying taxes on merchant ships, and hosting a strong fleet. The first prominent rulers were the Siddis, and the fort remained under their control till it was eventually annexed by the Indian government post-independence.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Not applicable – accessible by sailboat only"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "November to March for calm seas and pleasant weather"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Cannon bastions (Kalal Bangadi)",
+                                    "Freshwater tanks",
+                                    "Secret underwater escape routes",
+                                    "Palace ruins",
+                                    "Mosque and tomb of Siddi rulers"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "SiFo07",
+                "name": "Sinhagad Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Sinhagad Fort, located near Pune, was originally known as Kondhana and dates back to at least the 14th century. It gained prominence when Chhatrapati Shivaji Maharaj captured it in 1647, and it became a symbol of Maratha valor. The fort is especially remembered for the legendary battle of 1670 when Tanaji Malusare fought valiantly to recapture it from the Mughals. Strategically located atop a steep cliff, Sinhagad served as a military outpost to guard the Pune region and the important trade routes around the Bhuleshwar range. Its location allowed observation of key routes and communication with nearby forts like Rajgad and Torna. Sinhagad also helped in securing commerce from Pune to the Konkan region. The first known rulers were the Koli tribal chiefs, and the fort later fell into British hands after the fall of the Peshwas.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Easy to Moderate – accessible by road or 2-3 hour trek"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "June to February, especially popular during monsoons"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Tanaji Malusare Samadhi",
+                                    "Kalyan Darwaza",
+                                    "Rajaram Maharaj memorial",
+                                    "Amruteshwar temple",
+                                    "Wind point and Pune viewpoint"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "HaFo08",
+                "name": "Harishchandragad",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Harishchandragad, located in the Ahmednagar district, is an ancient fort dating back to the 6th century, with origins in the Kalachuri dynasty and further developed during the Yadava period. The fort holds immense mythological and historical significance, with evidence linking it to the Puranas and ancient temple architecture. It served as a strategic watchpoint for guarding the Malshej Ghat trade route and overseeing the plains below. The fort offered natural defense due to its steep cliffs and rugged terrain. Harishchandragad facilitated trade monitoring between Kalyan and Ahmednagar. The first known rulers were the Kalachuris, and later it came under the rule of Mughals and Marathas before falling to the British.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Moderate to Difficult – multiple trekking routes like Pachnai, Khireshwar, and Nalichi Vaat"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "October to March; monsoon for lush views, winter for night camping"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Konkan Kada (cliff with valley view)",
+                                    "Kedareshwar Cave Temple",
+                                    "Harishchandreshwar Temple",
+                                    "Taramati Peak (highest point)",
+                                    "Saptatirtha Pushkarni (sacred pond)"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "ToFo09",
+                "name": "Torna Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Torna Fort, also known as Prachandagad, is located near Pune and holds the honor of being the first fort captured by Chhatrapati Shivaji Maharaj in 1643 at the age of 16. This fort marks the beginning of the Maratha Empire. Its towering height and extensive spread made it a strategic outpost in the Sahyadris. The fort provided a vantage point over key trade and military routes connecting the Konkan to the Deccan. Torna was not only important militarily but also economically as it helped in regulating movement and trade taxation. Originally held by the Bahamani rulers, it became an essential part of Maratha expansion. Shivaji Maharaj was the first Maratha ruler of Torna, and it later fell into Mughal and British hands.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Difficult – long and steep trail with high elevation"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "October to February for trekking and historical exploration"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Zunjar Machi and Budhla Machi",
+                                    "Bini Darwaja (main entrance)",
+                                    "Konkan cliff views",
+                                    "Temple of Mengai Devi",
+                                    "Bastions and fortifications"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "storyList": []
+            },
+            {
+                "id": "SiFo10",
+                "name": "Sindhudurg Fort",
+                "imgUrl": "",
+                "imgAuthor": "",
+                "ImgAlt": "",
+                "Desc": "Sindhudurg Fort, located on an island off the Malvan coast, was built by Chhatrapati Shivaji Maharaj in 1664 to counter rising foreign naval powers like the Portuguese and British. It played a vital role in securing the western coastline and served as a naval headquarters for the Maratha navy. The fort's construction used over 4000 mounds of iron and local stone to withstand the harsh sea. It was crucial for maritime trade regulation and coastal defense in the Konkan region. Its control helped levy and protect trade ships moving between Goa and Mumbai. Shivaji Maharaj was the first ruler, and it remained under Maratha control until the British era.",
+                "highlight": [
+                    {
+                        "id": "1",
+                        "list": [
+                            {
+                                "title": "Trekking Difficulty",
+                                "value": "Not applicable – accessible by ferry from Malvan"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "list": [
+                            {
+                                "title": "Best Time to Visit",
+                                "value": "November to February for calm seas and clear skies"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "3",
+                        "list": [
+                            {
+                                "title": "Best Spots to Visit on the Fort",
+                                "value": [
+                                    "Shivaji Maharaj's footprint embedded in stone",
+                                    "Main gate camouflaged from view",
+                                    "Shivrajeshwar temple",
+                                    "Fort bastions facing the sea",
+                                    "Secret freshwater wells"
                                 ]
                             }
                         ]
