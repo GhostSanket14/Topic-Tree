@@ -1,7 +1,24 @@
 <div class="Root">
-    <div class="contentHolder">
+    <div>
         <h1>Admin Login</h1>
         <div>
+            <ng-container>
+                <mat-form-field>
+                    <input matInput placeholder="Enter your login ID" class="col2 customInput">
+                    <mat-error>Login ID is required</mat-error>
+                </mat-form-field>
+            </ng-container>
+
+            <ng-container>
+                <mat-form-field>
+                    <input matInput placeholder="Enter your Password" class="col2 customInput">
+                    <mat-error>Password is required</mat-error>
+                </mat-form-field>
+            </ng-container>
+
+            <ng-container>
+                <button type="button" mat-raised-button class="col5 altActionBtn">Login</button>
+            </ng-container>
         </div>
     </div>
 </div>

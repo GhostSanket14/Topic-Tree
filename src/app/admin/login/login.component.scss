@@ -1,0 +1,58 @@
+/* Outer wrapper to center everything */
+.Root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+/* Login panel */
+.Root>div {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Heading style */
+.Root h1 {
+    text-align: center;
+    color: #116530;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form field spacing */
+mat-form-field {
+    display: block;
+    width: 100%;
+}
+
+/* Button full width */
+.altActionBtn {
+    width: 100%;
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 400px) {
+    .Root>div {
+        padding: 1.2rem;
+    }
+
+    .Root h1 {
+        font-size: 1.3rem;
+    }
+
+    .altActionBtn {
+        font-size: 0.95rem;
+    }
+}
