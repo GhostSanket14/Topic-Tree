@@ -22,6 +22,7 @@ const materialModules = [
   MatProgressBarModule,
   MatListModule,
   FormsModule,
+  MatListModule,
   MatListModule
 ];
 

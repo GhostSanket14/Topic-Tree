@@ -1,23 +1,19 @@
-<div class="Root">
+<div class="Root" [formGroup]="myForm">
     <div>
         <h1>Admin Login</h1>
         <div>
             <ng-container>
-                <mat-form-field>
-                    <input matInput placeholder="Enter your login ID" class="col2 customInput">
+                    <input matInput formControlName="loginId" placeholder="Enter your login ID" class="col2 customInput">
                     <mat-error>Login ID is required</mat-error>
-                </mat-form-field>
             </ng-container>
 
             <ng-container>
-                <mat-form-field>
-                    <input matInput placeholder="Enter your Password" class="col2 customInput">
+                    <input matInput formControlName="loginPass" placeholder="Enter your Password" class="col2 customInput">
                     <mat-error>Password is required</mat-error>
-                </mat-form-field>
             </ng-container>
 
             <ng-container>
-                <button type="button" mat-raised-button class="col5 altActionBtn">Login</button>
+                <button type="button" mat-raised-button class="col5 altActionBtn" (click)="login()">Login</button>
             </ng-container>
         </div>
     </div>
