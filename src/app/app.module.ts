@@ -4,17 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonErrorComponent } from './pages/common-error/common-error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainDashboardComponent,
-    ErrorPageComponent
+    CommonErrorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

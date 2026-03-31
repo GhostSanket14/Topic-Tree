@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ErrorPageComponent } from './error-page.component';
+import { CommonErrorComponent } from './common-error.component';
 
-describe('ErrorPageComponent', () => {
-  let component: ErrorPageComponent;
-  let fixture: ComponentFixture<ErrorPageComponent>;
+describe('CommonErrorComponent', () => {
+  let component: CommonErrorComponent;
+  let fixture: ComponentFixture<CommonErrorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ErrorPageComponent ]
+      declarations: [ CommonErrorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ErrorPageComponent);
+    fixture = TestBed.createComponent(CommonErrorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

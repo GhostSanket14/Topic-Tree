@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { CommonErrorComponent } from './pages/common-error/common-error.component';
 
 const routes: Routes = [
   { path: 'dashboard', pathMatch: 'full', component: MainDashboardComponent },
-  { path: 'oops-page', pathMatch: 'full', data: { errType: 'unauthorised' }, component: ErrorPageComponent },
-  { path: '**', data: { errType: '404' }, component: ErrorPageComponent }
+  { path: '**', component: CommonErrorComponent }
 ];
 
 @NgModule({
